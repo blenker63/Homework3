@@ -4,10 +4,10 @@ public class Main {
     }
 public static  void task1() {
     System.out.println("Задача 1");
-    int dog = 25000;
-    System.out.println("Значение переменной" + " dog" + " с типом" + " int " + "равно "  +  dog);
-    byte cat = 5;
-    System.out.println( "Значение переменной cat с типом byte равно " + cat);
+    int dogLarge = 25000;
+    System.out.println("Значение переменной" + " dogLarge" + " с типом" + " int " + "равно "  +  dogLarge);
+    byte catSmall = 5;
+    System.out.println("Значение переменной catSmall с типом byte равно " + catSmall);
     short parrot = 1000;
     System.out.println("Значение переменной parrot с типом shourt равно " + parrot);
     long butterfly=100000;
