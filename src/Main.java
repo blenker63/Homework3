@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
+        task1();
+    }
+public static  void task1() {
+    System.out.println("Задача 1");
     int dog = 25000;
     System.out.println("Значение переменной" + " dog" + " с типом" + " int " + "равно "  +  dog);
     byte cat = 5;
