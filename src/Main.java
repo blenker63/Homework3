@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 public static  void task1() {
     System.out.println("Задача 1");
@@ -43,4 +44,16 @@ public static  void task1() {
     byte totalStudent = (byte) (LudPavl + AnSerg + EkatAndr);
     byte copybookOnStudent = (byte) (copybook/totalStudent);
         System.out.println("На каждого ученика рассчитано " + copybookOnStudent + " листов бумаги.");}
+    public static  void task4() {
+        System.out.println("Задача 4");
+    byte bottle = 16;
+    byte timeMin = 2;
+    byte perfomanceBottleTime = (byte) (bottle/timeMin);
+    byte OneSpecifiedIntervalMinute = 20;
+    byte TwoSpecifiedIntervalDay = 1;
+    byte ThreeSpecifiedIntervalDay = 3;
+    byte FourSpecifiedIntervalMonth = 1;
+    short OnePerfomanceBottle = (short) (perfomanceBottleTime * OneSpecifiedIntervalMinute);
+    System.out.println("За " + OneSpecifiedIntervalMinute + " минут машина произвела " + OnePerfomanceBottle + " штук бутылок.");
+    short TwoSpecifiedIntervalMinute = (short) (TwoSpecifiedIntervalDay * 24 * 60);}
 }
