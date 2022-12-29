@@ -55,5 +55,13 @@ public static  void task1() {
     byte FourSpecifiedIntervalMonth = 1;
     short OnePerfomanceBottle = (short) (perfomanceBottleTime * OneSpecifiedIntervalMinute);
     System.out.println("За " + OneSpecifiedIntervalMinute + " минут машина произвела " + OnePerfomanceBottle + " штук бутылок.");
-    short TwoSpecifiedIntervalMinute = (short) (TwoSpecifiedIntervalDay * 24 * 60);}
+    short TwoSpecifiedIntervalMinute = (short) (TwoSpecifiedIntervalDay * 24 * 60);
+    short TwoPerfomanceBottle = (short) (TwoSpecifiedIntervalMinute * perfomanceBottleTime);
+    System.out.println("За " + TwoSpecifiedIntervalDay + " сутки машина произвела " + TwoPerfomanceBottle + " штук бутылок.");
+    short ThreeSpecifiedIntervalMinute = (short) (ThreeSpecifiedIntervalDay * 24 * 60);
+    int ThreePerfomanceBottle = (int) (ThreeSpecifiedIntervalMinute * perfomanceBottleTime);
+    System.out.println("За " + ThreeSpecifiedIntervalDay + " дня машина произвела " + ThreePerfomanceBottle + " штук бутылок.");
+    int FourSpecifiedIntervalMinute = (int) (FourSpecifiedIntervalMonth * 30 * 24 * 60);
+    int FourPerfomanceBottle = (int) (FourSpecifiedIntervalMinute * perfomanceBottleTime);
+    System.out.println("За " + FourSpecifiedIntervalMonth + " месяц машина произвела " + FourPerfomanceBottle + " штук бутылок.");}
 }
