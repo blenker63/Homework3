@@ -48,7 +48,7 @@ public static  void task1() {
         System.out.println("Задача 4");
     byte bottle = 16;
     byte timeMin = 2;
-    byte perfomanceBottleTime = (byte) (bottle/timeMin);
+    byte perfomanceBottleTime = (byte) (bottle/timeMin); //расчет производительности за 1 минуту
     byte OneSpecifiedIntervalMinute = 20;
     byte TwoSpecifiedIntervalDay = 1;
     byte ThreeSpecifiedIntervalDay = 3;
