@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 public static  void task1() {
     System.out.println("Задача 1");
@@ -78,4 +79,22 @@ public static  void task1() {
     byte potTotalWhite = (byte) (totalClassSchool * oneClassPotWhite); // сколько банок белой краски на 1 класс
     byte potTotalBrown = (byte) (totalClassSchool * oneClassPotBrown); // сколько банок коричневой краски на 1 класс
     System.out.println("В школе, где " + totalClassSchool + " классов, нужно " + potTotalWhite + " банок белой краски и " + potTotalBrown + " банок коричневой краски.");}
+    public static  void task6() {
+        System.out.println("Задача 6");
+    byte quantityBanana = 5;
+    byte weightBananaGrams = 80;
+    float weightBananaGramsTotal = (float) (quantityBanana * weightBananaGrams);
+    short volumeMilkMl = 200;
+    float gramsInMl = 1.05f;
+    float weightMilkGramsTotal = (float) (volumeMilkMl * gramsInMl);
+    byte quantityIceCreamSundae = 2;
+    byte weightIceCreamSundaeGrams = 100;
+    float weightIceCreamSundaeTotal = (float) (quantityIceCreamSundae * weightIceCreamSundaeGrams);
+    byte quantityEgg = 4;
+    byte weightEggGrams = 70;
+    float weightEggGramsTotal = (float) (quantityEgg * weightEggGrams);
+    float weightBreakfastTotalGrams = (float) (weightBananaGramsTotal + weightMilkGramsTotal + weightIceCreamSundaeTotal+ weightEggGramsTotal);
+    short gramsInKilogram = 1000;
+    float weightBreakfastTotalKg = (float) (weightBreakfastTotalGrams / gramsInKilogram);
+    System.out.println(" Вес завтрака спортсмена составляет " + weightBreakfastTotalGrams + " грамма или " + weightBreakfastTotalKg + " килограмм.");}
 }
