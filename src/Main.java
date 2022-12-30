@@ -64,7 +64,7 @@ public static  void task1() {
     short TwoPerformanceBottle = (short) (TwoSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
     System.out.println("За " + TwoSpecifiedIntervalDay + " сутки машина произвела " + TwoPerformanceBottle + " штук бутылок.");
     short ThreeSpecifiedIntervalMinute = (short) (ThreeSpecifiedIntervalDay * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
-    int ThreePerformanceBottle = (short) (ThreeSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
+    int ThreePerformanceBottle = (ThreeSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
     System.out.println("За " + ThreeSpecifiedIntervalDay + " дня машина произвела " + ThreePerformanceBottle + " штук бутылок.");
     int FourSpecifiedIntervalMinute = (short) (FourSpecifiedIntervalMonth * dayMonth * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
     int FourPerformanceBottle = (short) (FourSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
