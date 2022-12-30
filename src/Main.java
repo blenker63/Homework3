@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 public static  void task1() {
     System.out.println("Задача 1");
@@ -97,4 +98,18 @@ public static  void task1() {
     short gramsInKilogram = 1000; // количество грамм в 1 кг
     float weightBreakfastTotalKg =  (weightBreakfastTotalGrams / gramsInKilogram); // перевод веса из грамм в кг
     System.out.println(" Вес завтрака спортсмена составляет " + weightBreakfastTotalGrams + " грамма или " + weightBreakfastTotalKg + " килограмм.");}
+    public static  void task7() {
+        System.out.println("Задача 7");
+    byte weightExcessKg = 7; // инициализация превышения веса спортсмена
+    short decreaseWeightGramsMax = 500; //инициализация  максимального снижения веса за 1 день
+    short decreaseWeightGramsMin = 250; // инициализация минимального веса снижения за 1 день
+    float decreaseWeightGramsAverage = (float) (decreaseWeightGramsMax + decreaseWeightGramsMin) / 2; // расчет среднего снижения веса
+    short gramsInKilogram = 1000; // количество грамм в 1 кг
+    short weightExcessGrams = (short) (weightExcessKg * gramsInKilogram); // перевод превышения веса из кг в граммы
+    byte decreaseExcessDayMax = (byte) (weightExcessGrams / decreaseWeightGramsMin); // расчет максимального количества дней снижения веса
+    short decreaseExcessDayMin = (short) (weightExcessGrams / decreaseWeightGramsMax); // расчет минимального количества дней снижения веса
+    float decreaseExcessDayAverage = (weightExcessGrams / decreaseWeightGramsAverage); // расчет среднего количества снижения веса
+    System.out.println(" Если спортсмен будет терять минимальное количество " + decreaseWeightGramsMin + " грамм в день, то результат будет достигнут через " + decreaseExcessDayMax + " дней.");
+    System.out.println(" Если спортсмен будет терять максимальное количество " + decreaseWeightGramsMax + " грамм в день, то результат будет достигнут через " + decreaseExcessDayMin + " дней.");
+    System.out.println(" Если спортсмен будет терять среднее количество " + decreaseWeightGramsAverage + " грамм в день, то результат будет достигнут через " + decreaseExcessDayAverage + " дней.");}
 }
