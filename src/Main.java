@@ -39,11 +39,11 @@ public static  void task1() {
     System.out.println(h);}
     public static  void task3() {
         System.out.println("Задача 3");
-    byte LudPavl = 23; // инициализация количества учеников в классе
-    byte AnSerg = 27; // инициализация количества учеников в классе
-    byte EkatAndr = 30; // инициализация количества учеников в классе
+    byte ludPavl = 23; // инициализация количества учеников в классе
+    byte anSerg = 27; // инициализация количества учеников в классе
+    byte ekatAndr = 30; // инициализация количества учеников в классе
     short copybook = 480; // инициализация количество тетрадей
-    byte totalStudent = (byte) (LudPavl + AnSerg + EkatAndr); // расчет количества всех учеников
+    byte totalStudent = (byte) (ludPavl + anSerg + ekatAndr); // расчет количества всех учеников
     byte copybookOnStudent = (byte) (copybook/totalStudent); // расчет количества тетрадей на 1 ученика
         System.out.println("На каждого ученика рассчитано " + copybookOnStudent + " листов бумаги.");}
     public static  void task4() {
@@ -51,24 +51,24 @@ public static  void task1() {
     byte bottle = 16; // инициализация количество бутылок произведенных за 2 минуты
     byte timeMin = 2; // инициализация количества времени для производства 16 бутылок
     byte performanceBottleTime = (byte) (bottle/timeMin); //расчет производительности за 1 минуту
-    byte OneSpecifiedIntervalMinute = 20; // инициализация количества времени в 1 временном интервале
-    byte TwoSpecifiedIntervalDay = 1; // инициализация количества времени во 2 временном интервале
-    byte ThreeSpecifiedIntervalDay = 3; // инициализация количества времени в 3 временном интервале
-    byte FourSpecifiedIntervalMonth = 1; // инициализация количества времени в 4 временном интервале
+    byte oneSpecifiedIntervalMinute = 20; // инициализация количества времени в 1 временном интервале
+    byte twoSpecifiedIntervalDay = 1; // инициализация количества времени во 2 временном интервале
+    byte threeSpecifiedIntervalDay = 3; // инициализация количества времени в 3 временном интервале
+    byte fourSpecifiedIntervalMonth = 1; // инициализация количества времени в 4 временном интервале
     byte minuteHour = 60; // количество минут в часе
     byte hourDay = 24; // количество часов в сутках
     byte dayMonth = 30; // количество дней в месяце
-    short OnePerformanceBottle = (short) (performanceBottleTime * OneSpecifiedIntervalMinute); // расчет количества произведенных бутылок
-    System.out.println("За " + OneSpecifiedIntervalMinute + " минут машина произвела " + OnePerformanceBottle + " штук бутылок.");
-    short TwoSpecifiedIntervalMinute = (short) (TwoSpecifiedIntervalDay * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
-    short TwoPerformanceBottle = (short) (TwoSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
-    System.out.println("За " + TwoSpecifiedIntervalDay + " сутки машина произвела " + TwoPerformanceBottle + " штук бутылок.");
-    short ThreeSpecifiedIntervalMinute = (short) (ThreeSpecifiedIntervalDay * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
+    short onePerformanceBottle = (short) (performanceBottleTime * oneSpecifiedIntervalMinute); // расчет количества произведенных бутылок
+    System.out.println("За " + oneSpecifiedIntervalMinute + " минут машина произвела " + onePerformanceBottle + " штук бутылок.");
+    short twoSpecifiedIntervalMinute = (short) (twoSpecifiedIntervalDay * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
+    short twoPerformanceBottle = (short) (twoSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
+    System.out.println("За " + twoSpecifiedIntervalDay + " сутки машина произвела " + twoPerformanceBottle + " штук бутылок.");
+    short ThreeSpecifiedIntervalMinute = (short) (threeSpecifiedIntervalDay * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
     int ThreePerformanceBottle = (ThreeSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
-    System.out.println("За " + ThreeSpecifiedIntervalDay + " дня машина произвела " + ThreePerformanceBottle + " штук бутылок.");
-    int FourSpecifiedIntervalMinute = (short) (FourSpecifiedIntervalMonth * dayMonth * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
+    System.out.println("За " + threeSpecifiedIntervalDay + " дня машина произвела " + ThreePerformanceBottle + " штук бутылок.");
+    int FourSpecifiedIntervalMinute = (short) (fourSpecifiedIntervalMonth * dayMonth * hourDay * minuteHour); // расчет количества минут в заданном интервале времени
     int FourPerformanceBottle = (short) (FourSpecifiedIntervalMinute * performanceBottleTime); // расчет количества произведенных бутылок
-    System.out.println("За " + FourSpecifiedIntervalMonth + " месяц машина произвела " + FourPerformanceBottle + " штук бутылок.");}
+    System.out.println("За " + fourSpecifiedIntervalMonth + " месяц машина произвела " + FourPerformanceBottle + " штук бутылок.");}
     public static  void task5() {
         System.out.println("Задача 5");
     byte potTotal = 120; // инициализация потребности количества банок красок
