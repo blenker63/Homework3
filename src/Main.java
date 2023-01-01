@@ -7,6 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
 public static  void task1() {
     System.out.println("Задача 1");
@@ -112,4 +113,26 @@ public static  void task1() {
     System.out.println(" Если спортсмен будет терять минимальное количество " + decreaseWeightGramsMin + " грамм в день, то результат будет достигнут через " + decreaseExcessDayMax + " дней.");
     System.out.println(" Если спортсмен будет терять максимальное количество " + decreaseWeightGramsMax + " грамм в день, то результат будет достигнут через " + decreaseExcessDayMin + " дней.");
     System.out.println(" Если спортсмен будет терять среднее количество " + decreaseWeightGramsAverage + " грамм в день, то результат будет достигнут через " + decreaseExcessDayAverage + " дней.");}
+    public static  void task8() {
+        System.out.println("Задача 8");
+    int zarPlatMasha = 67760; //инициализация зп Маши
+    int zarPlatDenis = 83690; //инициализация зп Дениса
+    int zarPlatKrestin = 76230; //инициализация зп Крестины
+    byte monthYear = 12; //инициализация количества месяцев в году
+    float zarPlatIncreaseCoeff = 1.1f; //инициализация коэффициента повышения зп в 10%
+    int incomeYearMasha =  (zarPlatMasha * monthYear); // расчет годового дохода Маши
+    int incomeYearDenis = (zarPlatDenis * monthYear); // расчет годового дохода Дениса
+    int incomeYearKrestin = (zarPlatKrestin * monthYear); //расчет годового дохода Кристины
+    float zarPlatMashaNew =  (zarPlatMasha * zarPlatIncreaseCoeff); //расчет новой зп Маши после повышения
+    float zarPlatDenisNew = zarPlatDenis * zarPlatIncreaseCoeff; // расчет новой зп Дениса после повышения
+    float zarPlatKrestinNew = zarPlatKrestin * zarPlatIncreaseCoeff; //расчет новой зп Крестины после повышения
+    float incomeYearMashaNew =  (zarPlatMashaNew * monthYear); //расчет нового годового дохода Маши после повышения
+    float incomeYearDenisNew = zarPlatDenisNew * monthYear; //расчет нового годового дохода Дениса после повышения
+    float incomeYearKrestinNew = (zarPlatKrestinNew * monthYear); // расчет нового годоового дохода Крестины после повышения
+    float incomeYearMashaIncrease = (incomeYearMashaNew - incomeYearMasha); //расчет на сколько увеличелся годовой доход Маши
+    float incomeYearDenisIncrease = (incomeYearDenisNew - incomeYearDenis); //расчет на сколько увеличелся годовой доход Дениса
+    float incomeYearKrestinIncrease = (incomeYearKrestinNew - incomeYearKrestin); //расчет на сколько увеличился годовой доход Крестины
+    System.out.println("Маша теперь будет получать " + zarPlatMashaNew + " рублей. Годовой доход вырос на " + incomeYearMashaIncrease + " рублей.");
+    System.out.println("Денис теперь будет получать " + zarPlatDenisNew + " рублей. Годовой доход вырос на " + incomeYearDenisIncrease + " рублей.");
+    System.out.println("Крестина теперь будет получать " + zarPlatKrestinNew + " рублей. Годовой доход вырос на " + incomeYearKrestinIncrease + " рублей.");}
 }
